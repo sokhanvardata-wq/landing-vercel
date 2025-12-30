@@ -1,5 +1,262 @@
 <!DOCTYPE html>
-<html>
-<head><title>Landing</title></head>
-<body>Hello</body>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سامانه ارزیابی و گزینش منابع انسانی</title>
+
+<!-- Vazirmatn (Fallback Font) -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+	--primary: #6D28D9;
+	--secondary: #2563EB;
+
+	--bg-page: linear-gradient(135deg, #F5F7FF, #EEF2FF);
+	--card-bg: #FFFFFF;
+	--text-main: #111827;
+	--text-muted: #6B7280;
+
+	--radius-card: 18px;
+	--radius-btn: 14px;
+	--shadow-card: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+	--font-main: 'IRANSans', 'Vazirmatn', sans-serif;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: var(--bg-page);
+	display: flex;
+	justify-content: center;
+	direction: rtl;
+	font-family: var(--font-main);
+	color: var(--text-main);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 32px;
+}
+
+/* main title */
+.page-title-box {
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.page-title-box h1 {
+	font-size: 34px;
+	font-weight: 800;
+	margin: 0;
+}
+
+/* sections */
+.card {
+	background: rgba(255,255,255,0.8);
+	backdrop-filter: blur(14px);
+	border-radius: var(--radius-card);
+	box-shadow: var(--shadow-card);
+	padding: 40px 32px;
+	margin-bottom: 40px;
+}
+
+/* headers */
+.header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.header h2 {
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 14px;
+}
+
+.header p {
+	font-size: 15px;
+	line-height: 1.9;
+	font-weight: 400;
+	color: var(--text-muted);
+}
+
+/* grids */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 24px;
+	justify-items: center;
+}
+
+/* card blocks */
+.item {
+	position: relative;
+	background: var(--card-bg);
+	border-radius: var(--radius-card);
+	padding: 34px 26px 28px;
+	transition: all 0.3s ease;
+	border: 1px solid #E5E7EB;
+	max-width: 300px;
+	width: 100%;
+	min-height: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.item:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 22px 45px rgba(109, 40, 217, 0.25);
+	border-color: var(--primary);
+}
+
+/* numbering */
+.step {
+	position: absolute;
+	top: -16px;
+	right: -16px;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 800;
+	font-size: 18px;
+	box-shadow: 0 10px 25px rgba(109, 40, 217, 0.4);
+}
+
+.item h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.item p {
+	font-size: 14px;
+	line-height: 1.9;
+	font-weight: 400;
+	color: var(--text-muted);
+	margin-bottom: 24px;
+	flex-grow: 1;
+}
+
+/* button */
+.item a {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	border-radius: var(--radius-btn);
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.item a:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+	<!-- ============================================
+	     عنوان اصلی صفحه
+	============================================ -->
+	<div class="page-title-box">
+		<h1>سامانه ارزیابی و گزینش منابع انسانی</h1>
+	</div>
+
+	<!-- ============================================
+	     سکشن ۱ — بررسی رزومه و فرم استخدامی
+	============================================ -->
+	<div class="card">
+		<div class="header">
+			<h2>بررسی اولیه رزومه و درخواست همکاری</h2>
+			<p>در این بخش اطلاعات متقاضی دریافت و بررسی اولیه شایستگی انجام می‌شود.</p>
+		</div>
+
+		<div class="grid">
+
+			<div class="item">
+				<div class="step">1</div>
+				<h3>ارسال و تحلیل رزومه</h3>
+				<p>آپلود رزومه و تحلیل خودکار سوابق شغلی، مهارت‌ها و میزان تناسب با سازمان.</p>
+				<a href="https://sokhanvar-mvp.app.n8n.cloud/form/2a87705d-8ba1-41f1-80ef-85f364ce253e" target="_blank">شروع تحلیل رزومه</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ============================================
+	     سکشن ۲ — آزمون‌ها
+	============================================ -->
+	<div class="card">
+
+		<div class="header">
+			<h2>آزمون‌های روانشناختی و هوش</h2>
+			<p>جهت سنجش دقیق ویژگی‌های فردی و توانایی‌های شناختی.</p>
+		</div>
+
+		<div class="grid">
+
+			<div class="item">
+				<div class="step">2</div>
+				<h3>آزمون هوش هیجانی (EQ)</h3>
+				<p>سنجش مهارت‌های هیجانی، خودآگاهی و تعاملات بین‌فردی.</p>
+				<a href="https://survey.porsline.ir/s/qmvydzrz" target="_blank">شروع آزمون EQ</a>
+			</div>
+
+			<div class="item">
+				<div class="step">3</div>
+				<h3>آزمون شخصیت NEO</h3>
+				<p>تحلیل ابعاد پنج‌گانه شخصیت برای ارزیابی رفتاری.</p>
+				<a href="https://survey.porsline.ir/s/jGbGmg9t" target="_blank">شروع آزمون NEO</a>
+			</div>
+
+			<div class="item">
+				<div class="step">4</div>
+				<h3>آزمون هوش و استعداد تحصیلی</h3>
+				<p>ارزیابی توانایی‌های شناختی و قدرت تحلیل فرد.</p>
+				<a href="https://survey.porsline.ir/s/kezvbyiX" target="_blank">شروع آزمون</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ============================================
+	     سکشن ۳ — مصاحبه آنلاین
+	============================================ -->
+	<div class="card">
+		<div class="header">
+			<h2>مصاحبه آنلاین هوشمند</h2>
+			<p>تحلیل کامل مهارت‌های فردی، شغلی و کلامی به کمک هوش مصنوعی.</p>
+		</div>
+
+		<div class="grid">
+
+			<div class="item">
+				<div class="step">5</div>
+				<h3>شروع مصاحبه آنلاین</h3>
+				<p>پاسخ‌گویی به سؤالات شغلی و تحلیل خودکار گفتار، توانمندی‌ها و ویژگی‌های فردی.</p>
+				<a href="page2.html" target="_blank">ورود به مصاحبه هوشمند</a>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+</body>
 </html>
