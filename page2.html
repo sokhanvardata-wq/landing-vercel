@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>راهنمای مصاحبه هوشمند تلگرامی</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+	--primary: #6D28D9;
+	--secondary: #2563EB;
+
+	--bg-page: linear-gradient(135deg, #F5F7FF, #EEF2FF);
+	--card-bg: #FFFFFF;
+	--text-main: #111827;
+	--text-muted: #6B7280;
+
+	--radius-card: 18px;
+	--radius-btn: 14px;
+	--shadow-card: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+	--font-main: 'Vazirmatn', sans-serif;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: var(--bg-page);
+	display: flex;
+	justify-content: center;
+	direction: rtl;
+	font-family: var(--font-main);
+	color: var(--text-main);
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	padding: 32px;
+}
+
+/* title */
+.page-title-box {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.page-title-box h1 {
+	font-size: 32px;
+	font-weight: 800;
+	margin: 0;
+}
+
+/* card */
+.card {
+	background: rgba(255,255,255,0.85);
+	backdrop-filter: blur(14px);
+	border-radius: var(--radius-card);
+	box-shadow: var(--shadow-card);
+	padding: 48px 36px;
+}
+
+/* header */
+.header {
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.header h2 {
+	font-size: 26px;
+	font-weight: 800;
+	margin-bottom: 14px;
+}
+
+.header p {
+	font-size: 15px;
+	line-height: 2;
+	color: var(--text-muted);
+}
+
+/* steps */
+.steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 24px;
+	margin-bottom: 40px;
+}
+
+.step-item {
+	background: var(--card-bg);
+	border-radius: var(--radius-card);
+	border: 1px solid #E5E7EB;
+	padding: 28px 24px;
+	position: relative;
+}
+
+.step-number {
+	position: absolute;
+	top: -14px;
+	right: -14px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 800;
+}
+
+.step-item h3 {
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.step-item p {
+	font-size: 14px;
+	line-height: 1.9;
+	color: var(--text-muted);
+}
+
+/* bot box */
+.bot-box {
+	background: linear-gradient(135deg, #EEF2FF, #F5F7FF);
+	border-radius: var(--radius-card);
+	padding: 28px;
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.bot-box span {
+	display: block;
+	font-size: 14px;
+	color: var(--text-muted);
+	margin-bottom: 10px;
+}
+
+.bot-box strong {
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--primary);
+	direction: ltr;
+}
+
+/* button */
+.actions {
+	text-align: center;
+}
+
+.actions a {
+	display: inline-block;
+	padding: 16px 36px;
+	border-radius: var(--radius-btn);
+	background: linear-gradient(135deg, var(--primary), var(--secondary));
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.actions a:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+	<div class="page-title-box">
+		<h1>مصاحبه آنلاین هوشمند</h1>
+	</div>
+
+	<div class="card">
+
+		<div class="header">
+			<h2>راهنمای شرکت در مصاحبه</h2>
+			<p>
+				این مصاحبه به‌صورت کاملاً آنلاین و از طریق ربات تلگرامی انجام می‌شود.
+				لطفاً مراحل زیر را با دقت دنبال کنید.
+			</p>
+		</div>
+
+		<div class="steps">
+			<div class="step-item">
+				<div class="step-number">1</div>
+				<h3>ورود به تلگرام</h3>
+				<p>در صورت نصب نبودن تلگرام، ابتدا آن را روی موبایل یا دسکتاپ نصب کنید.</p>
+			</div>
+
+			<div class="step-item">
+				<div class="step-number">2</div>
+				<h3>جستجوی ربات</h3>
+				<p>در قسمت جستجوی تلگرام، آیدی ربات مصاحبه هوشمند را وارد کنید.</p>
+			</div>
+
+			<div class="step-item">
+				<div class="step-number">3</div>
+				<h3>شروع مصاحبه</h3>
+				<p>پس از ورود به ربات، مراحل مصاحبه به‌صورت خودکار آغاز می‌شود.</p>
+			</div>
+		</div>
+
+		<div class="bot-box">
+			<span>آیدی ربات مصاحبه هوشمند</span>
+			<strong>@Interview_demo_bot</strong>
+		</div>
+
+		<div class="actions">
+			<a href="https://t.me/Interview_demo_bot" target="_blank">
+				ورود به ربات تلگرام
+			</a>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
